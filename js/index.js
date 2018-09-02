@@ -73,14 +73,15 @@ let countries = [Uruguay, Colombia, PuertoRico, Jamaica, Brasil, Haiti, Dominica
 let sounds = [];
 
 let soundsPaths = [
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Uruguay1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Colombia1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/PuertoRico1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Jamaica1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Brasil1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Haiti1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/DominicanRepublic1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Cuba1.wav'];
+  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+];
 
 let distanceThreshold = 20;
 
