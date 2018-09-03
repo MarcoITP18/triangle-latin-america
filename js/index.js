@@ -70,37 +70,26 @@ let countries = [Uruguay, Colombia, PuertoRico, Jamaica, Brasil, Haiti, Dominica
 
 
 //array of sounds
-let sounds = [];
+var  sounds = [];
 
 let soundsPaths = [
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
-  'https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/newLoops/ALEGRE_1.wav',
+  'https://dodiku.github.io/triangle-latin-america/music/newLoops/ALEGRE_1.wav',
+  'https://dodiku.github.io/triangle-latin-america/music/newLoops/ALEGRE_2.wav',
+  'https://dodiku.github.io/triangle-latin-america/music/newLoops/CLAVE.wav',
+  'https://dodiku.github.io/triangle-latin-america/music/newLoops/SAMBA_SNARE.wav',
+  'https://dodiku.github.io/triangle-latin-america/music/newLoops/TAMBORA.wav',  
+  'https://dodiku.github.io/triangle-latin-america/music/newLoops/CHOCALLO.wav',
+  'https://dodiku.github.io/triangle-latin-america/music/newLoops/PIANO.wav',
+  'https://dodiku.github.io/triangle-latin-america/music/newLoops/LLAMADOR.wav',
 ];
 
 let distanceThreshold = 20;
 
 function preload() {
-
-  //load all the files
+  // load all the files
   for (var i = 0 ; i < soundsPaths.length; i++) {
     sounds.push(loadSound(soundsPaths[i]));
   }
-
-  // mySound1 = loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Uruguay1.wav');
-  // mySound2 = loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Colombia1.wav');
-  // mySound3 = loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/PuertoRico1.wav');
-  // mySound4 = loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Jamaica1.wav');
-  // mySound5 = loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Brasil1.wav');
-  // // mySound6 = loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Panama.m`p3');
-  // mySound7 = loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Haiti1.wav');
-  // mySound8 = loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/DominicanRepublic1.wav');
-  // mySound10= loadSound('https://raw.githubusercontent.com/MarcoITP18/Latin-America-Map/master/www/music/Cuba1.wav')
 }
 
  function setup() {
@@ -110,6 +99,7 @@ function preload() {
 
   //make them all be muted and looping
   for (var i = 0 ; i < soundsPaths.length; i++) {
+    
     sounds[i].loop();
     sounds[i].setVolume(0.0);
   }
@@ -130,7 +120,6 @@ function draw() {
 }
 
 function mousePressed() {
-
     for (var i = 0; i < countries.length; i++) {
       if (int(dist(mouseX, mouseY, countries[i].x, countries[i].y)) < distanceThreshold) {
         if (sounds[i].getVolume() == 0.0) {
@@ -141,7 +130,6 @@ function mousePressed() {
     }
   }
 }
-
 
 function drawTriangles() {
   triangle(170, 175, 420, 270, 170, 575); //continent
